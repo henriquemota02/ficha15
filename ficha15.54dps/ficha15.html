@@ -67,12 +67,11 @@
             position: relative;
             width: 200px;
             height: 200px;
-            background-color: blueviolet;
             transform-style: preserve-3d;
             transform: perspective(500px) rotateX(60deg);
         }
-        .loeder6 span{
-            position: relative;
+        .loader6 span{
+            position: absolute;
             display: block;
             border: 2px solid blueviolet;
             border-radius: 50%;
@@ -82,10 +81,10 @@
 
         @keyframes animated6{
             0%,
-            100%{
+            100% {
                 transform: translateZ(-100px);
             }
-            50%{
+            50% {
                 transform: translateZ(100px);
             }
         }

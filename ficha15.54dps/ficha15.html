@@ -59,10 +59,92 @@
             <span></span>
 
         </div>
+ <!-- ----------------------------------------------------------------------------------------- -->
+        <div class="cards1">
+            <div class="box">
+                <div class="imgBx"><img src="img1.jpg" alt=""></div>
+                <div class="content">
+                    <h2>Title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam illo eum suscipit deleniti ratione.</p>
+                    <a href="">+info</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx"><img src="img2.jpg" alt=""></div>
+                <div class="content">
+                    <h2>Title</h2>
+                    <p>Repellendus perspiciatis deleniti nesciunt sed minus distinctio, sit quisquam sequi! Veniam pariatur magni architecto.</p>
+                    <a href="">+info</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx"><img src="img3.jpg" alt=""></div>
+                <div class="content">
+                    <h2>Title</h2>
+                    <p>Sit officiis ipsa numquam in delectus dignissimos, praesentium quod consectetur perspiciatis quasi accusamus doloremque?</p>
+                    <a href="">+info</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx"><img src="img4.jpg" alt=""></div>
+                <div class="content">
+                    <h2>Title</h2>
+                    <p>Porro et neque totam dolor cumque! Perspiciatis optio minus fugiat atque, repudiandae nobis quae?</p>
+                    <a href="">+info</a>
+                </div>
+            </div>
+        </div>
 
     </div>
 
     <style>
+        .cards1{
+            position: relative;
+            width: 1200px;
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            font-family: consolas;
+        }
+        .cards1 .box{
+            position: relative;
+            width: 280px;
+            height: 400px;
+            margin: 20px 0;
+            box-sizing: border-box;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+            overflow: hidden;
+        }
+        .cards1 .box .imgBx{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            clip-path: circle(400px at center 100px);
+            transition: 0.5s;
+            transition-delay: 0.5s;
+        }
+
+        .cards1 .box:hover .imgBx{
+            clip-path: circle(80px at center 100px);
+            transition-delay: 0s;
+        }
+
+        .cards1 .box .content{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 55%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .cards1 .box .content h2
+
+
         .loader6{
             position: relative;
             width: 200px;
